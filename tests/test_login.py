@@ -31,7 +31,7 @@ def test_login_with_valid_credentials_success(driver):
 
     LoginPage(driver).login(VALID_USERNAME, VALID_PASSWORD)
 
-    assert "dashboard" in driver.current_url, "Вход не выполнен, редирект на дашборд не произошел"
+    assert "dashboard/index" in driver.current_url, "Вход не выполнен, редирект на дашборд не произошел"
 
 
 def test_logout(driver):
